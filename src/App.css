@@ -1,0 +1,129 @@
+
+*{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+}
+body{
+background-image:url("../weather1.webp");
+/* background-size: cover; */
+  background-repeat: no-repeat;
+   /* background-size: cover;  */
+   background-position: center;
+ max-height: 100vh; 
+ display:flex;
+ flex-direction: column;
+ justify-content: space-between;
+
+} 
+.navbar .logo{
+  font-size:40px;
+  text-align: center;
+
+  
+}
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  /* box-shadow: 0px 1px 5px black; */
+width:50%;
+  height:80vh;
+justify-content: center;
+margin-left:25vw;
+
+}
+.container .search{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.container .search input{
+  font-size:30px;
+  padding-left:10px;
+  height:50px;
+  font-weight:bold;
+  background: transparent;
+  outline:none;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  /* border-bottom:2px solid black; */
+}
+
+.container .search .search-btn{
+  height:50px;
+  background: transparent;
+  border:none;
+  padding-left:20px;
+  font-size:20px;
+  cursor: pointer;
+  }
+  .info{
+    display:flex;
+    /* border:2px solid black; */
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items: center;
+    width:50%;
+  margin-top:20px;
+  margin-bottom:20px;
+
+  }
+.rest-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width:80%;
+flex-wrap: wrap;
+  margin-top:20px;
+
+}
+
+hr{
+  width:80%;
+}
+
+@media screen and  (max-width:512px){
+.info{
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  justify-content: center;
+}
+.rest-info{
+  display: flex;
+  flex-direction: column;
+}
+.search{
+width:100%;
+position:relative;
+top:120px;
+text-align: center;
+}
+.location{
+top:40px;
+position: relative;
+}
+.search input{
+font-size:10px;
+width:80%;
+}
+.search .search-btn{
+  position: relative;
+top:6px;
+}
+.info{
+  position:relative;
+  top:50px;
+}
+.location{
+  position:relative;
+  top:80px;
+}
+}
+@media screen and(max-width:768px) {
+  .rest-info{
+   
+  }
+}
+
